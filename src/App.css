@@ -1,0 +1,103 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 900px) {
+  .App-content {
+    max-width: 98vw !important;
+    padding: 8px !important;
+  }
+  .App-images {
+    flex-direction: column !important;
+    gap: 16px !important;
+    align-items: center !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .App-content {
+    max-width: 90vw !important;
+    margin: 24px auto !important;
+    padding: 20px 16px !important;
+    font-size: 15px !important;
+    border-radius: 6px !important;
+    box-sizing: border-box !important;
+    border: none !important;
+  }
+  .App-images img {
+    width: 85vw !important;
+    max-width: 350px !important;
+    min-width: 120px !important;
+    margin-bottom: 16px !important;
+  }
+  .App-images {
+    margin-bottom: 24px !important;
+    margin-top: 24px !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+  nav {
+    flex-direction: column !important;
+    height: auto !important;
+    padding: 0 24px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  nav > div {
+    gap: 48px !important;
+  }
+  .donate-buttons-mobile {
+    margin-top: 48px !important;
+    margin-bottom: 48px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+  .donate-buttons-mobile > div {
+    width: 90vw !important;
+    max-width: 300px !important;
+    margin-bottom: 16px !important;
+  }
+}
+
+body, html, #root, .App {
+  overflow-x: hidden !important;
+  box-sizing: border-box;
+}
